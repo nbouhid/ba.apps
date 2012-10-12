@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Responsive design</title>
+        <link href="styles/reset.css" rel="stylesheet" />
+        <link href="styles/response.css" rel="stylesheet" />
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <script src="http://servicios.usig.buenosaires.gob.ar/usig-js/2.3/usig.MapaInteractivo.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+           (function ($) {
+                $(document).ready(function() {      
+                    
+                    var mapa = new usig.MapaInteractivo('mapa', {
+                        onReady: function() {
+                            var markerId2 = mapa.addMarker('santa fe 2500');
+                            var markerId3 = mapa.addMarker('cabildo y juramento');
+                            var markerId4 = mapa.addMarker('corrientes 1530', false, 'Teatro Gral. San Martín');
+                            
+                            // Marcador con icono personalizado 
+                            var markerId5 = mapa.addMarker(
+                                    'perú 652', 
+                                    false, 
+                                    'Banco',
+                                    {
+                                        iconUrl: 'http://servicios.usig.buenosaires.gov.ar/symbols/mapabsas/bancos.png',
+                                        iconWidth: 41,
+                                        iconHeight: 41,
+                                        offsetX: 5,
+                                        offsetY: 5
+                                    }
+                            );
+                        }
+                    });                    
+                });
+
+            })(jQuery); 
+    </script>
+</head>
+<body class="page-details">
+    <header>        
+        <h1>CURSOS EN LA CIUDAD</h1>
+    </header>
+    <div class="bar-top">
+        <p>Curso de Fotograf&iacute;a</p>
+    </div>
+   
+    <div id="content">
+        <div class="container">
+            <!--aside>
+                <nav>
+                    <ul>
+                        <li class="cursos"><a href="javascript:;"><span class="ic_btn">&nbsp;</span>CURSOS</a></li>
+                        <li class="barrios"><a href="javascript:;"><span class="ic_btn">&nbsp;</span>BARRIOS</a></li>
+                        <li class="centros"><a href="javascript:;"><span class="ic_btn">&nbsp;</span>CENTROS</a></li>
+                        <li class="busqueda"><a href="javascript:;"><span class="ic_btn">&nbsp;</span>BUSQUEDA</a></li>
+                    </ul>
+                </nav>
+            </aside-->   
+            <div class="content-general">  
+                <div class="details">
+                    <div class="place">
+                        <p><strong>Centro Cabildo</strong>
+                        Av. Cabildo 2553</p>
+                    </div>
+
+                    <div class="duration">
+                        <p><strong>Centro Cabildo</strong>
+                        Av. Cabildo 2553</p>
+                    </div>
+
+                    <div class="phone">
+                        <p><strong>Tel&eacute;fono</strong>
+                        4558-5885</p>
+                    </div>
+
+                    <div class="hour">
+                        <p><strong>Horarios de Atenci&oacute;n</strong>
+                        18:00 a 21:00 hs.</p>
+                    </div>
+                </div>
+                <div id="mapa">
+                </div>
+
+            </div>
+        </div>        
+    </div>    
+    <footer>
+        <div>
+            @Copyright Buenos Aires App 2012
+        </div>
+    </footer>
+</body>
+</html>

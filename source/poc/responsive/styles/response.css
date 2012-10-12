@@ -35,33 +35,30 @@ img {
     display: block;
 }
 
-header p.title {
-    font-size: 22px;
-    font-weight: bold;
-    float: right;
-    text-align: center; 
-    width: 82%;
-    text-shadow: 1px 1px 1px #FFF;
-    color: #000;
-    line-height: 100px; 
+header {
+    width: 100%;
+    padding: 20px 0;
 }
 
-header a.logo {
-    display: block;
-    width: 18%;
-    float: left;
+header h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center; 
+    width: 80%;
+    text-shadow: 1px 1px 1px #FFF;
+    color: #000;
+    margin: 0 auto;
 } 
 
 #content {
     margin: 0 auto;
-    width: 1000px;
+    //width: 1024px;
 }
 
 /* ------ MENU ------- */
 
 #content .container {
-    padding: 20px 3% 0;
-    width: 92%;   
+    //width: 100%;   
 }
 
 #content .container nav ul li {
@@ -74,8 +71,8 @@ header a.logo {
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    font-size: 15px;
-    padding: 5px 12%;
+    font-size: 24px;
+    padding: 5px 0 5px 10%;
     text-shadow: 1px 1px 2px #ccc;
     display: block;
     line-height: 70px;
@@ -122,8 +119,6 @@ header a.logo {
 
 aside {
     padding: 0;
-    float: left;
-    width: 30%;
     background: #fafafa;
     
 }
@@ -150,18 +145,7 @@ div.bar-top {
 /* ------ [End Of] BAR TOP ------- */
 
 #content .container div.content-general {
-    float: right;
-    width: 60%;
-    border-radius: 10px;
-    margin: 0 auto;
-    background: #e5cd23; /* Old browsers */
-    background: -moz-linear-gradient(top,  #e5cd23 0%, #ffe428 50%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5cd23), color-stop(50%,#ffe428)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #e5cd23 0%,#ffe428 50%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #e5cd23 0%,#ffe428 50%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #e5cd23 0%,#ffe428 50%); /* IE10+ */
-    background: linear-gradient(to bottom,  #e5cd23 0%,#ffe428 50%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5cd23', endColorstr='#ffe428',GradientType=0 ); /* IE6-9 */
+    background: #fff;
     padding: 20px;
 }
 
@@ -177,145 +161,48 @@ footer {
     background: -ms-linear-gradient(top,  #e5cd23 0%,#ffe428 50%); /* IE10+ */
     background: linear-gradient(to bottom,  #e5cd23 0%,#ffe428 50%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5cd23', endColorstr='#ffe428',GradientType=0 ); /* IE6-9 */
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
-    padding: 5px 1%;
 }
 
-/* ------ basic styles for header and footer ------- */
-
-/* ------ styles for different devices ------- */
-
-/* Large desktop */
-@media (max-width: 1024px) {
-     #content {
-        width: 100%;
-    }
-}
-
-/* Portrait tablet to landscape and desktop */
-@media(max-width: 980px) {
-    #content {
-        width: 95%;
-    }
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-  #content {
-        width: 1024px;
-  }
-  
-  .content-general {
-     display: none;
-  }
+@media (max-width: 320px){
 
 }
 
-/* Landscape phone to portrait tablet */
-@media(max-width: 767px) {
-    #content {
-        width: 90%
-    }
+/* PAGE DETAILS */
 
-    #content .container nav ul li a {
-        font-size: 24px;        
-    }
-    
-    
-    aside,
-    #content .container div.content-general {
-        width: 95%;
-        margin: 0 auto;
-        float: none;
-    }
-    
-    aside {
-        margin-bottom: 20px;
-    }
-    
-    #content .container div.content-general {
-        width: 85%;
-        padding: 0 5%;
-    }
+body.page-details #content .container .content-general .details > div {
+    border-bottom: 1px solid #eceded;
 }
 
-@media(max-width: 480px) {   
+body.page-details #content .container .content-general .details > div.hour {
+    border-bottom: 1px solid #eceded;
+}
 
-    #content .container nav ul li a span {
-        margin-left: 15%;
-    }
-}   
+body.page-details #content .container .content-general .details p {
+    color: #6d6e71;
+    font-size: 24px;
+    padding: 15px 0 15px 10%;
+    text-shadow: 1px 1px 2px #ccc;
+    line-height: 28px;
+}
+
+body.page-details #content .container .content-general .details p strong {
+    display: block;
+    font-weight: bold;
+}
+
+body.page-details #mapa {
+        width: 740px;
+        height: 480px;
+}
+
+
+/* styles for 320 screem */
 
 @media(max-width: 320px) {
-
-    header {
-        line-height: 56px;
+   body.page-details #mapa{
+        width: 320px;
+        height: 320px;
     }
-
-    header a.logo img {
-        width: 100%; 
-    }
-
-    header p.title {
-        line-height: 56px;
-    }
-
-    aside {
-        margin: 0 auto;
-        float: none;
-        width: 100%;
-    }
-
-    #content .container {
-      padding: 20px 2% 0; 
-      width: 96%;   
-    }
-
-    #content .container div.content-general {
-        width: 96%;
-        margin: 0 auto;
-        float: none;
-        padding: 2%;
-    }
-
-    #content .container nav ul li a {
-        font-size: 26px;
-    }
-    
-    #content .container nav ul li a span {
-       margin-left: 5%;
-    }
-    
-    
 }
-
-@media(min-width: 240px) and (max-width: 319px)  {
-
-    header {
-        width: 100%;
-    }
-   
-    header p.title {
-        line-height: 55px;
-        padding-top: 20px;
-        font-size: 18px;
-        width: 72%;
-    }
-
-    #content .container {
-        padding: 0; 
-        width: 100%;   
-    }
-
-    header a.logo {
-        width: 40px;
-    }
-
-    #content .container nav ul li a {
-        font-size: 26px; 
-    }
-
-}
-
-/* ------ [End Of] styles for different devices ------- */

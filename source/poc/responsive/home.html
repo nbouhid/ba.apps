@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Responsive design</title>
+        <link href="styles/reset.css" rel="stylesheet" />
+        <link href="styles/response.css" rel="stylesheet" />
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <script type="text/javascript">
+           $(document).ready( function (){
+                //alert($(window).width()); /* Sacamos el ancho de la ventana, no del documento $(document) */
+            });
+        </script>
+
+</head>
+<body>
+    <header>        
+        <h1>CURSOS EN LA CIUDAD</h1>
+    </header>
+    <div class="bar-top">
+        <p>Bienvenidos</p>
+    </div>
+   
+    <div id="content">
+        <div class="container">
+            <aside>
+                <nav>
+                    <ul>
+                        <li class="cursos"><a href="javascript:;"><span class="ic_btn">&nbsp;</span>CURSOS</a></li>
+                        <li class="barrios"><a href="javascript:;"><span class="ic_btn">&nbsp;</span>BARRIOS</a></li>
+                        <li class="centros"><a href="javascript:;"><span class="ic_btn">&nbsp;</span>CENTROS</a></li>
+                        <li class="busqueda"><a href="javascript:;"><span class="ic_btn">&nbsp;</span>BUSQUEDA</a></li>
+                    </ul>
+                </nav>
+            </aside>   
+            <!--div class="content-general">  
+                <div class="mapa">
+                    
+                </div>
+            </div-->
+        </div>        
+    </div>    
+    <footer>
+        <div>
+            @Copyright Buenos Aires App 2012
+        </div>
+    </footer>
+</body>
+</html>
