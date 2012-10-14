@@ -8,15 +8,13 @@
         <link href="styles/response.css" rel="stylesheet" />
         <script type="text/javascript" src="scripts/jquery.js"></script>
         <script src="http://servicios.usig.buenosaires.gob.ar/usig-js/2.3/usig.MapaInteractivo.min.js" type="text/javascript"></script>
-        <script type="text/javascript">
+        <script type="text/javascript">       
            (function ($) {
                 $(document).ready(function() {      
                     
                     var mapa = new usig.MapaInteractivo('mapa', {
                         onReady: function() {
-                            var markerId2 = mapa.addMarker('santa fe 2500');
-                            var markerId3 = mapa.addMarker('cabildo y juramento');
-                            var markerId4 = mapa.addMarker('corrientes 1530', false, 'Teatro Gral. San Martín');
+                            var markerId4 = mapa.addMarker('corrientes 222', true, 'magic software factory');
                             
                             // Marcador con icono personalizado 
                             var markerId5 = mapa.addMarker(
@@ -34,11 +32,10 @@
                         }
                     });                    
                 });
-
             })(jQuery); 
     </script>
 </head>
-<body class="page-details">
+<body class="basic-page page-details">
     <header>        
         <h1>CURSOS EN LA CIUDAD</h1>
     </header>
