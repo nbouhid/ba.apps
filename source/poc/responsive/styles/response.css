@@ -42,6 +42,7 @@ header {
 
 header h1 {
     font-size: 22px;
+    line-height: 24px;
     font-weight: bold;
     text-align: center; 
     width: 80%;
@@ -52,22 +53,17 @@ header h1 {
 
 #content {
     margin: 0 auto;
-    //width: 1024px;
 }
 
 /* ------ MENU ------- */
 
-#content .container {
-    //width: 100%;   
-}
-
-#content .container nav ul li {
+#content .container nav ul.menu li {
     height: 80px;
     text-align: left;
 }
 
 
-#content .container nav ul li a {
+#content .container nav ul.menu li a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -78,19 +74,20 @@ header h1 {
     line-height: 70px;
 }
 
-#content .container nav ul li a:hover,
-#content .container nav ul li a:active {
-    background: #bebebe; /* Old browsers */
-    background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
-    background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+#content .container nav ul.menu li a:hover,
+#content .container nav ul.menu li a:active {
+  background: #bebebe; /* Old browsers */
+  background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
+  background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+
 }
 
-#content .container nav ul li a span {
+#content .container nav ul.menu li a span {
     width: 51px;
     height: 51px;
     display: block;
@@ -99,19 +96,19 @@ header h1 {
     background: url(../images/sprite_botonera.png) no-repeat;
 }
 
-#content .container nav ul li.cursos a span {
+#content .container nav ul.menu li.cursos a span {
     background-position: 0 0;
 }
 
-#content .container nav ul li.centros a span {
+#content .container nav ul.menu li.centros a span {
     background-position: 0 -52px;
 }
 
-#content .container nav ul li.barrios a span {
+#content .container nav ul.menu li.barrios a span {
     background-position: 0 -105px;
 }
 
-#content .container nav ul li.busqueda a span {
+#content .container nav ul.menu li.busqueda a span {
     background-position: 0 -156px;
 }
 
@@ -149,10 +146,9 @@ div.bar-top {
     padding: 20px;
 }
 
-/* ------ basic styles for header and footer ------- */
+/* ------ basic styles for header ------- */
 
-header,
-footer {
+header {
     background: #e5cd23; /* Old browsers */
     background: -moz-linear-gradient(top,  #e5cd23 0%, #ffe428 50%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5cd23), color-stop(50%,#ffe428)); /* Chrome,Safari4+ */
@@ -165,24 +161,124 @@ footer {
     margin: 0 auto;
 }
 
+/*----- FOOTER styles -----*/
+footer {  
+  padding: 20px 0;
+  width: 100%;
+  margin: 0 auto;
+  background: #49515a; /* Old browsers */
+  background: -moz-linear-gradient(top, #49515a 0%, #272a2e 50%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#49515a), color-stop(50%,#272a2e)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #49515a 0%,#272a2e 50%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #49515a 0%,#272a2e 50%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #49515a 0%,#272a2e 50%); /* IE10+ */
+  background: linear-gradient(to bottom, #49515a 0%,#272a2e 50%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49515a', endColorstr='#272a2e',GradientType=0 ); /* IE6-9 */
+}
+
+footer ul.menu {
+  height: 68px;
+}
+
+footer ul.menu li {
+  float: left;
+  width: 25%;
+}
+
+footer ul.menu li.cursos {
+
+}
+
+footer ul.menu li.busqueda {
+
+}
+
+footer ul.menu li a {
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer ul.menu li a:hover,
+footer ul.menu li a:active {
+    background: #272a2e; /* Old browsers */
+    background: -moz-linear-gradient(top, #272a2e 0%, #49515a 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272a2e), color-stop(50%,#49515a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #272a2e 0%,#49515a 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #272a2e 0%,#49515a 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #272a2e 0%,#49515a 50%); /* IE10+ */
+    background: linear-gradient(to bottom, #272a2e 0%,#49515a 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272a2e', endColorstr='#49515a',GradientType=0 ); /* IE6-9 */
+}
+
+footer ul.menu li a span {
+  margin: 0 auto;
+  display: block;
+  background: url("../images/sp_menu_bottom.png") no-repeat;
+  width: 35px;
+  height: 34px;
+}
+
+footer ul.menu li.cursos {
+  background-position: 0 0;
+}
+
+
+/*----- [End OF] FOOTER styles -----*/
+
 @media (max-width: 320px){
 
 }
 
 /* PAGE DETAILS */
 
+body.page-details footer {
+    padding: 1px 0;
+}
+
 body.page-details #content .container .content-general .details > div {
+    width: 100%;
     border-bottom: 1px solid #eceded;
 }
 
-body.page-details #content .container .content-general .details > div.hour {
-    border-bottom: 1px solid #eceded;
+body.page-details #content .container .content-general .details > div p {
+    padding: 15px 0 15px 5%;
+    float: left;
+}
+
+body.page-details #content .container .content-general .details div span {
+    background: url("../images/sp_ic_details.png") 0 0 no-repeat;
+    display: block;
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin-top: 12px;
+}
+
+body.page-details #content .container .content-general .details div.place span {
+    background-position: 0 -167px;
+    height: 44px;
+    margin-top: 17px;
+}
+
+body.page-details #content .container .content-general .details div.duration span {
+}
+
+body.page-details #content .container .content-general .details div.phone span {
+        background-position: 0 -55px ;
+}
+
+body.page-details #content .container .content-general .details div.hour span {
+    background-position: 0 -112px;
 }
 
 body.page-details #content .container .content-general .details p {
     color: #6d6e71;
-    font-size: 24px;
-    padding: 15px 0 15px 10%;
+    font-size: 20px;
     text-shadow: 1px 1px 2px #ccc;
     line-height: 28px;
 }
@@ -193,8 +289,9 @@ body.page-details #content .container .content-general .details p strong {
 }
 
 body.page-details #mapa {
-        width: 740px;
-        height: 480px;
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
 }
 
 
@@ -202,7 +299,6 @@ body.page-details #mapa {
 
 @media(max-width: 320px) {
    body.page-details #mapa{
-        width: 320px;
-        height: 320px;
+      
     }
 }
