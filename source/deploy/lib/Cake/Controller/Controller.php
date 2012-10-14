@@ -864,6 +864,7 @@ class Controller extends Object implements CakeEventListener {
 		$this->view = $action;
 		$args = func_get_args();
 		unset($args[0]);
+    debug($args);
 		return call_user_func_array(array(&$this, $action), $args);
 	}
 
