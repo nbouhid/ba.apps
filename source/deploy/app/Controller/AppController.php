@@ -32,4 +32,16 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+  
+  protected function listAll($model) {
+    $rows = $model->find('all');
+    $this->set('items', $rows);
+       
+    $this->viewPath = '';
+    $this->view = 'list';
+    
+    $this->set('body_classes', array('basic-page', 'page-cursos-front'));
+    $this->set('model', $model->name);
+    $this->set('top_title', $this->name);
+  }
 }

@@ -76,5 +76,6 @@ class PagesController extends AppController {
   public function home(){ 
     $this->set('title_for_layout', 'Bienvenidos'); 
     $this->set('top_title', 'Bienvenidos');
+    $this->set('is_homepage', true);
   } 
 }

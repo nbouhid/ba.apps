@@ -11,10 +11,6 @@ class CategoriasController extends AppController {
    * Index action
    */
   public function index() {
-    $rows = $this->Categoria->find('all');
-    $this->set('items', $rows);
-       
-    $this->viewPath = '';
-    $this->view = 'list';
+    $this->listAll($this->Categoria);
   }
 }

@@ -11,6 +11,8 @@ class CursosController extends AppController {
   public function beforeFilter() {
     parent::beforeFilter();
     
+    $this->set('body_classes', array('basic-page', 'page-cursos'));
+    
     //If the action doesn't exist, may be it's a request for a curso
     if(!in_array($this->request->params['action'], get_class_methods($this))
             && is_numeric($this->request->params['action'])) {
@@ -24,6 +26,8 @@ class CursosController extends AppController {
         $this->request->params['pass'][0] = $curso;
         
         $this->view = 'detalle';
+        
+        $this->set('body_classes', array('basic-page', 'page-details'));
       }
     }
   }
@@ -39,15 +43,15 @@ class CursosController extends AppController {
 	}
   
   public function porBarrio($nombre) {
-    $barrio = $this->cargarItemModeloPorNombre($this->Barrio, $nombre);
+    $this->cargarItemModeloPorNombre($this->Barrio, $nombre);
   }
   
   public function porCentro($nombre) {
-    $centro = $this->cargarItemModeloPorNombre($this->Centro, $nombre);
+    $this->cargarItemModeloPorNombre($this->Centro, $nombre);
   }
   
   public function porCategoria($nombre) {
-    $categoria = $this->cargarItemModeloPorNombre($this->Categoria, $nombre);
+    $this->cargarItemModeloPorNombre($this->Categoria, $nombre);
   }
   
   private function cargarItemModeloPorNombre($model, $nombre) {
@@ -58,14 +62,16 @@ class CursosController extends AppController {
       $this->redirect('/');
     }
     
-    $conditions = array($model->name . '.id' => $filtro['Barrio']['id']);
+    $conditions = array($model->name . '.id' => $filtro[$model->name]['id']);
     
     $this->set('items', $this->Curso->getCursos($conditions));
-    
+    $this->set('top_title', 'Por ' . Inflector::pluralize($model->name));
+
     $this->view = 'list';
   }
   
   public function detalle($curso) {
     $this->set('curso', $curso);
+    $this->set('top_title', 'Curso de ' . $curso['Curso']['nombre']);
   }
 }

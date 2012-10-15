@@ -14,10 +14,12 @@
       echo $this->fetch('css');
       
       echo $this->Html->script('jquery');
+      echo $this->Html->script('http://servicios.usig.buenosaires.gob.ar/usig-js/2.3/usig.MapaInteractivo.min.js');
+      echo $this->Html->script('general');
       echo $this->fetch('script');
     ?>
   </head>
-  <body>
+  <body class="<?php if(isset($body_classes)): echo implode(" ", $body_classes); endif; ?>">
     <header>        
       <h1>CURSOS EN LA CIUDAD</h1>
     </header>
@@ -35,9 +37,14 @@
       </div>        
     </div>    
     <footer>
+    <?php if(isset($is_homepage) && $is_homepage === true) : ?>
+    
       <div>
         @Copyright Buenos Aires App 2012
       </div>
+    <?php else : ?>
+      <?php print $this->element('menu-nav'); ?>
+    <?php endif; ?>
     </footer>
   </body>
 </html>
