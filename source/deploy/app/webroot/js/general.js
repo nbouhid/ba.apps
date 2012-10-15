@@ -8,23 +8,22 @@
     if(mapa_container.length > 0) {
       var mapa = new usig.MapaInteractivo('mapa', {
         onReady: function() {
-            /*var markerId4 = mapa.addMarker('corrientes 222', true, 'magic software factory');
-
-            // Marcador con icono personalizado 
-            var markerId5 = mapa.addMarker(
-                    'perú 652', 
-                    false, 
-                    'Banco',
-                    {
-                        iconUrl: 'http://servicios.usig.buenosaires.gov.ar/symbols/mapabsas/bancos.png',
-                        iconWidth: 41,
-                        iconHeight: 41,
-                        offsetX: 5,
-                        offsetY: 5
-                    }
-            );*/
+          var markerId = mapa.addMarker(
+            direccion_curso, 
+            true, 
+            $('div#marker_desc').html(),
+            {
+              iconUrl: 'http://servicios.usig.buenosaires.gov.ar/symbols/universidades.png',
+              iconWidth: 21,
+              iconHeight: 21,
+              offsetX: 5,
+              offsetY: 5
+            }
+            //http://servicios.usig.buenosaires.gov.ar/symbols/mapabsas/bibliotecas_patrimoniales.png
+            //http://servicios.usig.buenosaires.gov.ar/symbols/tablero_de_control/sg_bibliotecas.gif
+          );
         }
-      });   
+      });
     }
   }
 })(jQuery);

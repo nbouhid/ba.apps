@@ -32,3 +32,9 @@
   
   <div id="mapa"></div>
 </div>
+<script type="text/javascript">
+  var direccion_curso = '<?php print $curso['Centro']['direccion']; ?>';
+</script>
+<div id="marker_desc" style="display: none;">
+  sarasa<br><br><p style="color: red;">sarasa</p>
+</div>
