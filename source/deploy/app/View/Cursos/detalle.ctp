@@ -32,6 +32,7 @@
   
   <div id="mapa"></div>
 </div>
+<?php //TODO: Research a better way to do this ?>
 <script type="text/javascript">
   var direccion_curso = '<?php print $curso['Centro']['direccion']; ?>';
 </script>

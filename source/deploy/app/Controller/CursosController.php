@@ -7,8 +7,6 @@ App::uses('AppController', 'Controller');
 class CursosController extends AppController {
 
   public $uses = array('Curso', 'Centro', 'Categoria', 'Barrio');
-  //public $helpers = array('Js', 'Html');
-  public $helpers = array('Js');
   
   public function beforeFilter() {
     parent::beforeFilter();
