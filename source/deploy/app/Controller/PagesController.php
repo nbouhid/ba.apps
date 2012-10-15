@@ -72,4 +72,9 @@ class PagesController extends AppController {
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 		$this->render(implode('/', $path));
 	}
+  
+  public function home(){ 
+    $this->set('title_for_layout', 'Bienvenidos'); 
+    $this->set('top_title', 'Bienvenidos');
+  } 
 }
