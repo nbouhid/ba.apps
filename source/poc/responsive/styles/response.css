@@ -1,10 +1,10 @@
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
  
 .clearfix {
@@ -51,8 +51,13 @@ header h1 {
     margin: 0 auto;
 } 
 
+header h1 a {
+    width: 50%;
+}
+
 #content {
     margin: 0 auto;
+    padding-bottom: 73px;
 }
 
 /* ------ MENU ------- */
@@ -182,6 +187,8 @@ footer {
     -moz-box-shadow: -5px -5px 5px 5px #c1c1c1;
     -webkit-box-shadow: -5px -5px 5px 5px #c1c1c1;
     box-shadow: -5px -5px 5px 5px #c1c1c1;
+    position: fixed;
+    bottom: 0;
 }
 
 footer ul.menu {
@@ -352,7 +359,8 @@ body.basic-page #content .container .content-general .details a span {
 
 /*---- CUROSOS FRONT PAGE ----*/
 
-body.page-cursos-front #content .container div.content-general {
+body.page-cursos-front #content .container div.content-general,
+body.page-barrios #content .container div.content-general {
     padding: 0;
 }
 
@@ -410,7 +418,8 @@ body.page-cursos #content .container .content-general  {
     padding: 0;
 }
 
-body.page-cursos #content .container .content-general .details a {
+body.page-cursos #content .container .content-general .details a,
+body.page-barrios #content .container .content-general .details a {
     line-height: 22px;
     padding-top: 0;
     height: 100%;
@@ -421,13 +430,60 @@ body.page-cursos #content .container .content-general .details span.datos-curso 
     float: none;
 }
 
-body.page-cursos #content .container .content-general .details a span.ic_arrow  {
+body.page-barrios #content .container .content-general .details a span.ic_arrow,
+body.page-cursos #content .container .content-general .details a span.ic_arrow {
     margin-top: 36px; 
 }
 
 body.page-cursos #content .container .content-general .details a span.datos-curso {
-     padding-left: 10%;
+    padding-left: 10%;
 }
 
 /*---- END OF CUROSOS PAGE ----*/
 
+/*---- BARRIOS PAGE ----*/
+
+body.page-barrios #content .container .content-general .details a span.datos-curso {
+    padding-left: 10%;
+    margin-top: 20px;
+}
+
+body.page-barrios header h1 {
+    float: left;
+    width: 50%;
+    padding-right: 25%;
+    text-align: center;
+    margin-top: 6px; 
+}
+
+body.page-barrios header div.container-back {
+    width: 25%;
+    float: left;
+}
+
+body.page-barrios header div.container-back a {
+    text-decoration: none;
+    background: url("../images/bg_buscar.jpg") repeat-x;
+    -webkit-border-radius: 0 25px 25px 0;
+    -m-oz-border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0;
+    height: 38px;
+    line-height: 38px;
+    display: block; 
+    width: 60px;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+body.page-barrios header div.container-back span {
+    display: block;
+    background: url("../images/img_buscar_flecha.png") no-repeat left top;
+    width: 20px;
+    height: 38px;
+    float: left;    
+    margin-left: 10%;
+}
+
+/*---- END OF BARRIOS PAGE ----*/
