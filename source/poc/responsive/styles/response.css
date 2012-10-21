@@ -69,6 +69,7 @@ header h1 a {
 
 #content {
     margin: 0 auto;
+    padding-bottom: 63px;
 }
 
 /* ------ MENU ------- */
@@ -192,6 +193,11 @@ footer {
     left: 0;
     background: #fff;
     height: 81px;
+    z-index: 1022;
+}
+
+footer .logo-footer {
+    display: none;
 }
 
 footer div.footer-text {
@@ -263,9 +269,18 @@ footer ul.menu li a span {
   height: 34px;
 }
 
-footer ul.menu li.cursos {
-  background-position: 0 0;
+footer ul.menu li.barrios a span {
+  background-position: 0 -34px;
 }
+
+footer ul.menu li.centros a span {
+  background-position: 0 -68px;
+}
+
+footer ul.menu li.busqueda a span {
+  background-position: 0 -102px;
+}
+
 /*----- END OF FOOTER STYLES -----*/
 
 /*----- HOME PAGE SYTLES -----*/
@@ -529,32 +544,65 @@ body.page-barrios header div.container-back span {
 
 @media (min-width: 640px) {
 
-    #content .container nav ul.menu {
-        padding: 0 10%;
-        overflow: hidden;
+    /*----- END OF HOME PAGE -----*/
+
+    body.home #content {
+        padding-bottom: 0;
     }
 
-    #content .container nav ul.menu li a span {
+    body.home footer {
+        position: inherit;
+    }
+
+    body.home footer div.footer-text {
+        background: #fafafa;
+        color: #6D6E71;
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    body.home footer div.box-shadow {
+        display: none;
+    }
+    
+    body.home footer .logo-footer {
+        background: #fafafa;
+        display: block;
+        width: 77px;
+        margin: 0 auto;
+    }
+
+    body.home div.bar-top {
+        color: #000;
+        background: #fafafa;
+    }
+
+    body.home div.bar-top p {
+        text-shadow: 1px 2px 2px #ccc;
+    }
+
+    body.home #content .container nav ul.menu li a span {
         margin-left: 5%;
     }
 
-    #content .container nav ul.menu {
-        padding: 20px 5%;
+    body.home #content .container nav ul.menu {
+        padding: 20px 5% 0;
+        overflow: hidden;
     }
 
-    #content .container nav ul.menu li {
+    body.home #content .container nav ul.menu li {
         float: left;
         width: 45%;
-        margin-bottom: 45px;
+        margin-bottom: 20px;
         height: auto;
     }
 
-    #content .container nav ul.menu li.barrios,
-    #content .container nav ul.menu li.busqueda {
+    body.home #content .container nav ul.menu li.barrios,
+    body.home #content .container nav ul.menu li.busqueda {
         float: right;
     }
 
-    #content .container nav ul.menu li a {
+    body.home #content .container nav ul.menu li a {
         border-left: 1px solid #edeeef;
         border-right: 1px solid #edeeef;
         border-bottom: 1px solid #edeeef;
@@ -571,10 +619,12 @@ body.page-barrios header div.container-back span {
         background: -ms-linear-gradient(top,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* IE10+ */
         background: linear-gradient(to bottom,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6f8', endColorstr='#dedede',GradientType=0 ); /* IE6-9 */
+        color: #6d6e71;
+        text-shadow: 1px 1px 2px #fff;
     }
 
-    #content .container nav ul.menu li a:hover,
-    #content .container nav ul.menu li a:active {
+    body.home #content .container nav ul.menu li a:hover,
+    body.home #content .container nav ul.menu li a:active {
     background: rgb(222,222,222); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(222,222,222,1) 24%, rgba(244,246,248,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,rgba(222,222,222,1)), color-stop(100%,rgba(244,246,248,1))); /* Chrome,Safari4+ */
@@ -586,6 +636,37 @@ body.page-barrios header div.container-back span {
 
     }
 
+    body.home footer {
+        height: auto;
+    }
+
+  /*----- END OF HOME PAGE -----*/
+
+  /*------ DETAILS PAGE ------*/
+
+    body.page-details #content .container .content-general .details {
+        overflow: hidden;
+    }  
+
+    body.page-details #content .container .content-general .details > div {
+        width: 50%;
+        float: left;
+    }
+
+    /*------  END OF DETAILS PAGE ------*/
+
+    /*-------  CURSOS FRONT PAGE  -------*/
+
+    body.basic-page #content .container .content-general .details ul.cursos-list {
+        overflow: hidden;
+    }
+
+    body.basic-page #content .container .content-general .details ul.cursos-list li {
+        width: 50%;
+        float: left; 
+    }
+
+    /*-------  CURSOS FRONT PAGE  -------*/
 
 }
 
