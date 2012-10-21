@@ -527,6 +527,67 @@ body.page-barrios header div.container-back span {
     margin-left: 10%;
 }
 
+@media (min-width: 640px) {
+
+    #content .container nav ul.menu {
+        padding: 0 10%;
+        overflow: hidden;
+    }
+
+    #content .container nav ul.menu li a span {
+        margin-left: 5%;
+    }
+
+    #content .container nav ul.menu {
+        padding: 20px 5%;
+    }
+
+    #content .container nav ul.menu li {
+        float: left;
+        width: 45%;
+        margin-bottom: 45px;
+        height: auto;
+    }
+
+    #content .container nav ul.menu li.barrios,
+    #content .container nav ul.menu li.busqueda {
+        float: right;
+    }
+
+    #content .container nav ul.menu li a {
+        border-left: 1px solid #edeeef;
+        border-right: 1px solid #edeeef;
+        border-bottom: 1px solid #edeeef;
+        border-left: 1px solid #f8f9f9;
+        padding: 20px 0 20px 10%;
+        -webkit-border-radius: 10px;
+        -m-oz-border-radius: 10px;
+        border-radius: 10px;
+        background: rgb(244,246,248); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(244,246,248,1) 24%, rgba(222,222,222,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,rgba(244,246,248,1)), color-stop(100%,rgba(222,222,222,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6f8', endColorstr='#dedede',GradientType=0 ); /* IE6-9 */
+    }
+
+    #content .container nav ul.menu li a:hover,
+    #content .container nav ul.menu li a:active {
+    background: rgb(222,222,222); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(222,222,222,1) 24%, rgba(244,246,248,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,rgba(222,222,222,1)), color-stop(100%,rgba(244,246,248,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#f4f6f8',GradientType=0 ); /* IE6-9 */
+
+    }
+
+
+}
 
 @media (max-width: 320px) {
     body.page-barrios header {
