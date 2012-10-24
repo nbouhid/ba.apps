@@ -23,7 +23,7 @@
     <header>        
       <h1>CURSOS EN LA CIUDAD</h1>
     </header>
-    <? if(!empty($top_title)) : ?>
+    <?php if(!empty($top_title)) : ?>
       <div class="bar-top">
         <p><?php echo $top_title; ?></p>
       </div>

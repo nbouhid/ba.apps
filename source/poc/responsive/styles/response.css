@@ -6,17 +6,17 @@
     line-height: 0;
     height: 0;
 }
- 
+
 .clearfix {
-	display: inline-block;
+    display: inline-block;
 }
- 
+
 html[xmlns] .clearfix {
-	display: block;
+    display: block;
 }
- 
+
 * html .clearfix {
-	height: 1%;
+    height: 1%;
 }
 
 html {
@@ -26,6 +26,7 @@ html {
 body {
     font: 13px/16px arial;
     color: #fff;
+    margin: 0;
 }
 
 .box-shadow {
@@ -93,14 +94,14 @@ header h1 a {
 
 #content .container nav ul.menu li a:hover,
 #content .container nav ul.menu li a:active {
-  background: #bebebe; /* Old browsers */
-  background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
-  background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+    background: #bebebe; /* Old browsers */
+    background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
+    background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -136,7 +137,7 @@ header h1 a {
 aside {
     padding: 0;
     background: #fafafa;
-    
+
 }
 /*---- END OF ASIDE STYLES ----*/
 
@@ -201,7 +202,7 @@ footer .logo-footer {
 }
 
 footer div.footer-text {
-   background: #000;
+    background: #000;
     padding: 10px 0;
     background: #49515a; /* Old browsers */
     background: -moz-linear-gradient(top, #49515a 0%, #272a2e 50%); /* FF3.6+ */
@@ -226,8 +227,8 @@ footer ul.menu {
 }
 
 footer ul.menu li {
-  float: left;
-  width: 25%;
+    float: left;
+    width: 25%;
 }
 
 footer ul.menu li.cursos {
@@ -262,23 +263,23 @@ footer ul.menu li a.active {
 }
 
 footer ul.menu li a span {
-  margin: 0 auto;
-  display: block;
-  background: url("../images/sp_menu_bottom.png") no-repeat;
-  width: 35px;
-  height: 34px;
+    margin: 0 auto;
+    display: block;
+    background: url("../images/sp_menu_bottom.png") no-repeat;
+    width: 35px;
+    height: 34px;
 }
 
 footer ul.menu li.barrios a span {
-  background-position: 0 -34px;
+    background-position: 0 -34px;
 }
 
 footer ul.menu li.centros a span {
-  background-position: 0 -68px;
+    background-position: 0 -68px;
 }
 
 footer ul.menu li.busqueda a span {
-  background-position: 0 -102px;
+    background-position: 0 -102px;
 }
 
 /*----- END OF FOOTER STYLES -----*/
@@ -286,7 +287,7 @@ footer ul.menu li.busqueda a span {
 /*----- HOME PAGE SYTLES -----*/
 
 body.home #content {
-  padding-bottom: 48px;
+    padding-bottom: 48px;
 }
 
 body.home footer {
@@ -328,7 +329,7 @@ body.basic-page #content .container .content-general .details div.place span {
 }
 
 body.basic-page #content .container .content-general .details div.phone span {
-        background-position: 0 -55px ;
+    background-position: 0 -55px ;
 }
 
 body.basic-page #content .container .content-general .details div.hour span {
@@ -372,14 +373,14 @@ body.basic-page #content .container .content-general .details a {
 
 body.basic-page #content .container .content-general .details a:active,
 body.basic-page #content .container .content-general .details a:hover {
-  background: #bebebe; /* Old browsers */
-  background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
-  background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+    background: #bebebe; /* Old browsers */
+    background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
+    background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 }
 
 body.basic-page #content .container .content-general .details a span.ic_arrow {
@@ -404,7 +405,7 @@ body.basic-page #content .container .content-general .details span.datos-curso s
 }
 
 body.basic-page #content .container .content-general .details a span {
-        float: left;
+    float: left;
 }
 
 /*---- END OF BASIC PAGE STYLES ----*/
@@ -611,7 +612,7 @@ body.page-barrios header div.container-back span {
     body.home footer div.box-shadow {
         display: none;
     }
-    
+
     body.home footer .logo-footer {
         background: #fafafa;
         display: block;
@@ -672,14 +673,14 @@ body.page-barrios header div.container-back span {
 
     body.home #content .container nav ul.menu li a:hover,
     body.home #content .container nav ul.menu li a:active {
-    background: rgb(222,222,222); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(222,222,222,1) 24%, rgba(244,246,248,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,rgba(222,222,222,1)), color-stop(100%,rgba(244,246,248,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#f4f6f8',GradientType=0 ); /* IE6-9 */
+        background: rgb(222,222,222); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(222,222,222,1) 24%, rgba(244,246,248,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,rgba(222,222,222,1)), color-stop(100%,rgba(244,246,248,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#f4f6f8',GradientType=0 ); /* IE6-9 */
 
     }
 
@@ -687,9 +688,9 @@ body.page-barrios header div.container-back span {
         height: auto;
     }
 
-  /*----- END OF HOME PAGE -----*/
+    /*----- END OF HOME PAGE -----*/
 
-  /*------ DETAILS PAGE ------*/
+    /*------ DETAILS PAGE ------*/
 
     body.page-details #content .container .content-general .details {
         overflow: hidden;

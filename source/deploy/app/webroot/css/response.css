@@ -1,31 +1,44 @@
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
- 
+
 .clearfix {
-	display: inline-block;
+    display: inline-block;
 }
- 
+
 html[xmlns] .clearfix {
-	display: block;
+    display: block;
 }
- 
+
 * html .clearfix {
-	height: 1%;
+    height: 1%;
 }
 
 html {
-    background-color: #3c3c3c;
+
 }
 
 body {
     font: 13px/16px arial;
     color: #fff;
+    margin: 0;
+}
+
+.box-shadow {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    width: 100%;
+    height: 12px;
 }
 
 img {
@@ -51,8 +64,13 @@ header h1 {
     margin: 0 auto;
 } 
 
+header h1 a {
+    width: 50%;
+}
+
 #content {
     margin: 0 auto;
+    padding-bottom: 63px;
 }
 
 /* ------ MENU ------- */
@@ -76,14 +94,14 @@ header h1 {
 
 #content .container nav ul.menu li a:hover,
 #content .container nav ul.menu li a:active {
-  background: #bebebe; /* Old browsers */
-  background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
-  background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+    background: #bebebe; /* Old browsers */
+    background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
+    background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -119,7 +137,7 @@ header h1 {
 aside {
     padding: 0;
     background: #fafafa;
-    
+
 }
 /*---- END OF ASIDE STYLES ----*/
 
@@ -168,9 +186,24 @@ header {
 
 /*----- FOOTER STYLES -----*/
 footer {  
-    padding: 20px 0;
+    padding: 0 0 20px 0;
     width: 100%;
     margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    height: 81px;
+    z-index: 1022;
+}
+
+footer .logo-footer {
+    display: none;
+}
+
+footer div.footer-text {
+    background: #000;
+    padding: 10px 0;
     background: #49515a; /* Old browsers */
     background: -moz-linear-gradient(top, #49515a 0%, #272a2e 50%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#49515a), color-stop(50%,#272a2e)); /* Chrome,Safari4+ */
@@ -179,18 +212,23 @@ footer {
     background: -ms-linear-gradient(top, #49515a 0%,#272a2e 50%); /* IE10+ */
     background: linear-gradient(to bottom, #49515a 0%,#272a2e 50%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49515a', endColorstr='#272a2e',GradientType=0 ); /* IE6-9 */
-    -moz-box-shadow: -5px -5px 5px 5px #c1c1c1;
-    -webkit-box-shadow: -5px -5px 5px 5px #c1c1c1;
-    box-shadow: -5px -5px 5px 5px #c1c1c1;
 }
 
 footer ul.menu {
-  height: 68px;
+    height: 73px;
+    background: #49515a; /* Old browsers */
+    background: -moz-linear-gradient(top, #49515a 0%, #272a2e 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#49515a), color-stop(50%,#272a2e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #49515a 0%,#272a2e 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #49515a 0%,#272a2e 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #49515a 0%,#272a2e 50%); /* IE10+ */
+    background: linear-gradient(to bottom, #49515a 0%,#272a2e 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49515a', endColorstr='#272a2e',GradientType=0 ); /* IE6-9 */
 }
 
 footer ul.menu li {
-  float: left;
-  width: 25%;
+    float: left;
+    width: 25%;
 }
 
 footer ul.menu li.cursos {
@@ -202,7 +240,7 @@ footer ul.menu li.busqueda {
 }
 
 footer ul.menu li a {
-    padding: 10px 0;
+    padding: 11px 0;
     display: block;
     width: 100%;
     color: #fff;
@@ -225,22 +263,44 @@ footer ul.menu li a.active {
 }
 
 footer ul.menu li a span {
-  margin: 0 auto;
-  display: block;
-  background: url("../img/sp_menu_bottom.png") no-repeat;
-  width: 35px;
-  height: 34px;
+    margin: 0 auto;
+    display: block;
+    background: url("../img/sp_menu_bottom.png") no-repeat;
+    width: 35px;
+    height: 34px;
 }
 
-footer ul.menu li.cursos {
-  background-position: 0 0;
+footer ul.menu li.barrios a span {
+    background-position: 0 -34px;
 }
+
+footer ul.menu li.centros a span {
+    background-position: 0 -68px;
+}
+
+footer ul.menu li.busqueda a span {
+    background-position: 0 -102px;
+}
+
 /*----- END OF FOOTER STYLES -----*/
+
+/*----- HOME PAGE SYTLES -----*/
+
+body.home #content {
+    padding-bottom: 48px;
+}
+
+body.home footer {
+    height: 40px;
+    padding-bottom: 0;
+}
+
+/*----- HOME PAGE SYTLES -----*/
 
 /*----- BASIC PAGE STYLES -----*/
 
 body.basic-page footer {
-    padding: 1px 0;
+    padding: 0;
 }
 
 body.basic-page #content .container .content-general .details > div {
@@ -269,7 +329,7 @@ body.basic-page #content .container .content-general .details div.place span {
 }
 
 body.basic-page #content .container .content-general .details div.phone span {
-        background-position: 0 -55px ;
+    background-position: 0 -55px ;
 }
 
 body.basic-page #content .container .content-general .details div.hour span {
@@ -313,14 +373,14 @@ body.basic-page #content .container .content-general .details a {
 
 body.basic-page #content .container .content-general .details a:active,
 body.basic-page #content .container .content-general .details a:hover {
-  background: #bebebe; /* Old browsers */
-  background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
-  background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+    background: #bebebe; /* Old browsers */
+    background: -moz-linear-gradient(top, #bebebe 0%, #f2f2f2 4%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(4%,#f2f2f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
+    background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
 }
 
 body.basic-page #content .container .content-general .details a span.ic_arrow {
@@ -345,15 +405,20 @@ body.basic-page #content .container .content-general .details span.datos-curso s
 }
 
 body.basic-page #content .container .content-general .details a span {
-        float: left;
+    float: left;
 }
 
 /*---- END OF BASIC PAGE STYLES ----*/
 
 /*---- CUROSOS FRONT PAGE ----*/
 
-body.page-cursos-front #content .container div.content-general {
+body.page-cursos-front #content .container div.content-general,
+body.page-barrios #content .container div.content-general {
     padding: 0;
+}
+
+body.page-cursos-front #content .container .content-general .details a {
+    line-height: 22px;
 }
 
 body.page-cursos-front #content .container .content-general .details a span.icono-curso {
@@ -402,6 +467,7 @@ body.page-cursos-front #content .container .content-general .details a.administr
     background-position: 0 -335px;
     height: 58px;
 }
+
 /*---- END OF CUROSOS FRONT PAGE ----*/
 
 /*---- CUROSOS PAGE ----*/
@@ -410,7 +476,8 @@ body.page-cursos #content .container .content-general  {
     padding: 0;
 }
 
-body.page-cursos #content .container .content-general .details a {
+body.page-cursos #content .container .content-general .details a,
+body.page-barrios #content .container .content-general .details a {
     line-height: 22px;
     padding-top: 0;
     height: 100%;
@@ -421,13 +488,249 @@ body.page-cursos #content .container .content-general .details span.datos-curso 
     float: none;
 }
 
-body.page-cursos #content .container .content-general .details a span.ic_arrow  {
+body.page-barrios #content .container .content-general .details a span.ic_arrow,
+body.page-cursos #content .container .content-general .details a span.ic_arrow {
     margin-top: 36px; 
 }
 
 body.page-cursos #content .container .content-general .details a span.datos-curso {
-     padding-left: 10%;
+    padding-left: 10%;
 }
 
 /*---- END OF CUROSOS PAGE ----*/
 
+/*---- BARRIOS PAGE ----*/
+
+body.page-barrios #content .container .content-general .details a span.datos-curso {
+    padding-left: 10%;
+    margin-top: 20px;
+}
+
+body.page-barrios header h1 {
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-top: 6px; 
+}
+
+body.page-barrios header div.container-back {
+    width: 25%;
+    float: left;
+}
+
+body.page-barrios header div.container-back a {
+    text-decoration: none;
+    background: url("../img/bg_buscar.jpg") repeat-x;
+    -webkit-border-radius: 0 25px 25px 0;
+    -m-oz-border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0;
+    height: 38px;
+    line-height: 38px;
+    display: block; 
+    width: 60px;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+body.page-barrios header div.container-back span {
+    display: block;
+    background: url("../img/img_buscar_flecha.png") no-repeat left top;
+    width: 20px;
+    height: 38px;
+    float: left;    
+    margin-left: 10%;
+}
+
+/*---- END OF BARRIOS PAGE ----*/
+
+/*---- CURSOS SEARCH ACTIVE PAGE ----*/
+
+.search-form {
+    background: #49515a; /* Old browsers */
+    background: -moz-linear-gradient(top, #272a2e 0%, #49515a 81%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#272a2e), color-stop(81%,#49515a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #272a2e 0%, #49515a 81%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #272a2e 0%, #49515a 81%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #272a2e 0%, #49515a 81%); /* IE10+ */
+    background: linear-gradient(to bottom,  #272a2e 0%,#49515a 81%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272a2e', endColorstr='#49515a',GradientType=0 ); /* IE6-9 */
+    -webkit-border-radius: 15px;
+    -m-oz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.search-form input {
+    font-size: 12px;
+    float: left;
+}
+
+.search-form .search-text {
+    height: 35px;
+    padding: 0 10px 0 35px;
+    border: none;
+    -webkit-border-radius: 15px;
+    -m-oz-border-radius: 15px;
+    border-radius: 15px;
+    color: #fff;
+    background: #07080a url("../img/lupa-search.png") 7px 5px no-repeat;
+}
+
+.search-form .search-btn {
+    background: none;
+    border: none;
+    padding: 5px 5px 5px 30px;
+    -webkit-border-radius:  0 15px 15px 0;
+    -m-oz-border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    height: 35px;
+}
+
+/*---- END OF CURSOS SEARCH ACTIVE PAGE ----*/
+
+@media (min-width: 640px) {
+
+    /*----- END OF HOME PAGE -----*/
+
+    body.home #content {
+        padding-bottom: 0;
+    }
+
+    body.home footer {
+        position: inherit;
+    }
+
+    body.home footer div.footer-text {
+        background: #fafafa;
+        color: #6D6E71;
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    body.home footer div.box-shadow {
+        display: none;
+    }
+
+    body.home footer .logo-footer {
+        background: #fafafa;
+        display: block;
+        width: 77px;
+        margin: 0 auto;
+    }
+
+    body.home div.bar-top {
+        color: #000;
+        background: #fafafa;
+    }
+
+    body.home div.bar-top p {
+        text-shadow: 1px 2px 2px #ccc;
+    }
+
+    body.home #content .container nav ul.menu li a span {
+        margin-left: 5%;
+    }
+
+    body.home #content .container nav ul.menu {
+        padding: 20px 5% 0;
+        overflow: hidden;
+    }
+
+    body.home #content .container nav ul.menu li {
+        float: left;
+        width: 45%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    body.home #content .container nav ul.menu li.barrios,
+    body.home #content .container nav ul.menu li.busqueda {
+        float: right;
+    }
+
+    body.home #content .container nav ul.menu li a {
+        border-left: 1px solid #edeeef;
+        border-right: 1px solid #edeeef;
+        border-bottom: 1px solid #edeeef;
+        border-left: 1px solid #f8f9f9;
+        padding: 20px 0 20px 10%;
+        -webkit-border-radius: 10px;
+        -m-oz-border-radius: 10px;
+        border-radius: 10px;
+        background: rgb(244,246,248); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(244,246,248,1) 24%, rgba(222,222,222,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,rgba(244,246,248,1)), color-stop(100%,rgba(222,222,222,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(244,246,248,1) 24%,rgba(222,222,222,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f6f8', endColorstr='#dedede',GradientType=0 ); /* IE6-9 */
+        color: #6d6e71;
+        text-shadow: 1px 1px 2px #fff;
+    }
+
+    body.home #content .container nav ul.menu li a:hover,
+    body.home #content .container nav ul.menu li a:active {
+        background: rgb(222,222,222); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(222,222,222,1) 24%, rgba(244,246,248,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,rgba(222,222,222,1)), color-stop(100%,rgba(244,246,248,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(222,222,222,1) 24%,rgba(244,246,248,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedede', endColorstr='#f4f6f8',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    body.home footer {
+        height: auto;
+    }
+
+    /*----- END OF HOME PAGE -----*/
+
+    /*------ DETAILS PAGE ------*/
+
+    body.page-details #content .container .content-general .details {
+        overflow: hidden;
+    }  
+
+    body.page-details #content .container .content-general .details > div {
+        width: 50%;
+        float: left;
+    }
+
+    /*------  END OF DETAILS PAGE ------*/
+
+    /*-------  CURSOS FRONT PAGE  -------*/
+
+    body.basic-page #content .container .content-general .details ul.cursos-list {
+        overflow: hidden;
+    }
+
+    body.basic-page #content .container .content-general .details ul.cursos-list li {
+        width: 50%;
+        float: left; 
+    }
+
+    /*-------  CURSOS FRONT PAGE  -------*/
+
+}
+
+@media (max-width: 320px) {
+    body.page-barrios header {
+        padding: 0;
+    }
+
+    body.page-barrios header h1 {
+        width: 55%;
+        padding: 5px 0 5px;
+    }
+
+    body.page-barrios header div.container-back {
+        width: 35%;
+        padding: 12px 0 0 0;
+    }
+
+}
