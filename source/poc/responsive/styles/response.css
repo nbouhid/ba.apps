@@ -181,6 +181,7 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5cd23', endColorstr='#ffe428',GradientType=0 ); /* IE6-9 */
     width: 100%;
     margin: 0 auto;
+    display: block;
 }
 /* ------ END OF basic styles for header ------- */
 
