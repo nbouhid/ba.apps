@@ -19,8 +19,12 @@
       echo $this->fetch('script');
     ?>
   </head>
-  <body class="<?php if(isset($body_classes)): echo implode(" ", $body_classes); endif; ?>">
-    <header>        
+  <body class="<?php if(isset($body_classes)): echo implode(" ", $body_classes);else: echo 'home'; endif; ?>">
+    <header>
+      <?php if(isset($is_homepage) && $is_homepage === true) : ?>
+        <?php else:?>
+        <div class="container-back"><span>&nbsp;</span><a href="javascript:history.back();" title="volver">volver</a></div>
+      <?php endif;?>
       <h1>CURSOS EN LA CIUDAD</h1>
     </header>
     <?php if(!empty($top_title)) : ?>

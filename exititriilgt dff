@@ -1,0 +1,240 @@
+[33mcommit 87a9b0efb9394b63751515433cc1adddd4e0a460[m
+Author: root <root@ubuntu.(none)>
+Date:   Fri Nov 9 00:58:17 2012 -0300
+
+    update db
+
+[33mcommit ee253e00dc5ad7b4070b743fed89cb074fa100b5[m
+Author: rbraile <roberto.braile@gmail.com>
+Date:   Fri Nov 9 00:02:42 2012 -0300
+
+    look and feel last style for to day
+
+[33mcommit ca28442e9da9d94832e415bf64978c8bb41217e2[m
+Author: rbraile <roberto.braile@gmail.com>
+Date:   Thu Nov 8 23:57:44 2012 -0300
+
+    fix bugs in the differents resolution for galaxy ace
+
+[33mcommit d9d22fb47c5451165893c0491de6dbd1d4a59c7a[m
+Author: ndezzutto <ndezzutto@ciandti.com>
+Date:   Mon Oct 29 15:34:51 2012 -0300
+
+    Ba.apps - Fixed white border in barrios responsive
+
+[33mcommit 1191df8c36f3bee083e03ef2e46e6f580dc6657e[m
+Author: cristian <cristian@ciandt.com>
+Date:   Fri Oct 26 11:17:27 2012 -0300
+
+    Mockups desktop.
+
+[33mcommit e56a0a9df12b016d588fa83852aa55ccd40d001a[m
+Author: rbraile <roberto.braile@gmail.com>
+Date:   Wed Oct 24 20:31:53 2012 -0300
+
+    borrando unos archivos que aparecen borrados y la reputa madre que los pario git del orto comitia de una vez
+
+[33mcommit e350f418d9b304d0aa84f000e555814f4903e3ba[m
+Author: rbraile <roberto.braile@gmail.com>
+Date:   Tue Oct 23 23:35:19 2012 -0300
+
+    mmmmm mmmmmmmmmmmmm que mierda es esto
+
+[33mcommit 738d8d31962a281de2db1886f948e95a30bf91c0[m
+Author: rbraile <roberto.braile@gmail.com>
+Date:   Tue Oct 23 23:24:04 2012 -0300
+
+    add look and feel to cake site
+
+[33mcommit bf2a0fa5d890b0eda4b72603b027bbabf870a82b[m
+Author: roberto <roberto@ciandt.com>
+Date:   Sun Oct 21 22:41:22 2012 -0300
+
+    create cursos search page look and feel
+
+[33mcommit 0ec7f00c53d3ff6f053cb4d2b66d243f5239cd3d[m
+Author: roberto <roberto@ciandt.com>
+Date:   Sun Oct 21 00:31:23 2012 -0300
+
+    add look and feel for desktop site
+
+[33mcommit dbe8b0d0613d292ea8ea99e3742212515bb03a4c[m
+Author: roberto <roberto@ciandt.com>
+Date:   Sat Oct 20 21:58:20 2012 -0300
+
+    add look and feel for home desktop
+
+[33mcommit f8f251f44db4b17f6875f3d9eeb1e0b340b14fd9[m
+Author: roberto <roberto@ciandt.com>
+Date:   Sat Oct 20 19:10:02 2012 -0300
+
+    add styles for home page
+
+[33mcommit 657d37df161b98daf6fe64209db280250390715b[m
+Author: roberto <roberto@ciandt.com>
+Date:   Sat Oct 20 11:23:32 2012 -0300
+
+    add look and feel for barrios
+
+[33mcommit 16c9e3e9b29bf58b3b61273e39c8a4c256fd1c95[m
+Author: nbouhid <nicolas@ciandt.com>
+Date:   Mon Oct 15 02:55:08 2012 -0300
+
+    Added some functionality to the bs as map
+
+[33mcommit 4c05bdc3526914fe1b32bf2426d2ceb78dffc773[m
+Author: root <root@casa.fibertel.com.ar>
+Date:   Mon Oct 15 02:47:40 2012 -0300
+
+    Added some functionality to the bs as map
+
+[33mcommit 362e23cee673b467cd39221fbc2bedf5bb1906f9[m
+Author: root <root@casa.fibertel.com.ar>
+Date:   Sun Oct 14 23:40:11 2012 -0300
+
+    Implemented details view, and some others
+
+[33mcommit d70e965ba25d53fa2cc6c18b3b0cf1a72b47344d[m
+Author: root <root@casa.fibertel.com.ar>
+Date:   Sun Oct 14 22:38:29 2012 -0300
+
+    Migrating styles and JS. Created home view
+
+[33mcommit a78edf831e4cd18013d2c1cd2a1be65ee4d27d24[m
+Author: root <root@casa.fibertel.com.ar>
+Date:   Sun Oct 14 22:13:42 2012 -0300
+
+    Created all models. Created basic actions functionality.
+
+[33mcommit dbd0862419d60fe6666058e76dfb1b80d7ef5022[m
+Author: roberto <roberto@ciandt.com>
+Date:   Sun Oct 14 17:58:26 2012 -0300
+
+    create look and feel for 02-Cursos-Front.png and 02-Cursos-Lista.png
+
+[33mcommit 47faa3e564afbcffb8e1ab31f49c1e91b8e68542[m
+Merge: a40211a 9f183af
+Author: roberto <roberto@ciandt.com>
+Date:   Sun Oct 14 10:20:46 2012 -0300
+
+    Merge branch 'master' of https://github.com/nbouhid/ba.apps.ciandt
+
+[33mcommit a40211ae73d30248c922bbbea0b270d19c687d5d[m
+Author: roberto <roberto@ciandt.com>
+Date:   Sun Oct 14 10:20:35 2012 -0300
+
+    create look and feel for details page
+
+[33mcommit 9f183af48c3e7c7a4ece79aab08fe6ca39ed2270[m
+Author: root <root@casa.fibertel.com.ar>
+Date:   Sun Oct 14 05:59:24 2012 -0300
+
+    Created all models. Created basic actions functionality.
+
+[33mcommit b957c8cb61484e34599c758f560a23721cf7e652[m
+Author: roberto <roberto@ciandt.com>
+Date:   Fri Oct 12 16:01:28 2012 -0300
+
+    create detalle.html page
+
+[33mcommit 991dc2b86bf8f0bfc48787348019972d38618c36[m
+Author: martin <martin@ciandt.co>
+Date:   Wed Oct 10 10:38:52 2012 -0300
+
+    Added model & view
+
+[33mcommit c3bf9e47861b81c50544de722a88c1d92f974603[m
+Author: martin <martin@ciandt.co>
+Date:   Wed Oct 10 10:11:55 2012 -0300
+
+    Auto Responsive movido a View/Pages y cambios en default.ctp , creacion de CursosController y Model Cursos con un index.ctp en vistas de Cursos
+
+[33mcommit 1d3f76c5171515c2ccdd23669740614ee6cdc097[m
+Author: cristian <cristian@ciandt.com>
+Date:   Tue Oct 9 13:50:02 2012 -0300
+
+    Actualizados Assets.
+    
+    - Nueva sección : Busqueda + Selección de Filtros + Resultados.
+    - Eliminado el "ver mas..." de Cursos.
+
+[33mcommit 937a4c89eb4aefe372bc8f4bd216fe06a1c60a2b[m
+Author: dmartin-ciandt <dmartin@ciandt.com>
+Date:   Tue Oct 9 11:34:02 2012 -0300
+
+    1.1
+
+[33mcommit 5756423e9f7c162a81da044155244def3f95644e[m
+Author: martin <martin@ciandt.co>
+Date:   Mon Oct 8 15:36:14 2012 -0300
+
+    Base de datos
+
+[33mcommit f2e1b36099c7449d7f0b5ac082361dc607e3d6b9[m
+Author: roberto <roberto@ciandt.com>
+Date:   Sun Oct 7 22:36:53 2012 -0300
+
+    responsive base html and css poc
+
+[33mcommit 3549569d4a0fff146d0d3ac22de318efa5c75f8f[m
+Author: cristian <cristian@ciandt.com>
+Date:   Thu Oct 4 12:03:56 2012 -0300
+
+    Subido mockup de la vista detallada de los cursos.
+
+[33mcommit 3b868e6632ea02d404b5c6498af1d2fa3362174f[m
+Author: Cristian Guasti <cristian@exhumed.com.ar>
+Date:   Thu Oct 4 00:55:42 2012 -0300
+
+    Render, Splash Screen mockup & Logo mockup
+
+[33mcommit 1f02b2771559859c0451156e3055e9316e22add2[m
+Author: Cristian Guasti <cristian@exhumed.com.ar>
+Date:   Thu Oct 4 00:39:17 2012 -0300
+
+    Subidos Assets Versión 4 - 10/04
+    
+    - Agregado un boceto de logo.
+    - Agregada lista por cateogorías.
+    - Cambiado el botón de volver a texto nuevamente.
+
+[33mcommit 04ec4de552968dbd115858dc060e71933b124381[m
+Author: cristian <cristian@ciandt.com>
+Date:   Wed Oct 3 16:29:17 2012 -0300
+
+    Updated Assets.
+    
+    - La barra de navegación cambio de lugar.
+    - Agregada instancia active en las listas.
+    - Eliminados los thumbnails / iconos de las listas.
+    - Agregados nuevos assets para las secciones Centros y Barrios.
+
+[33mcommit 0de34d7b34c49927d40f9024850b98646f5bd172[m
+Author: dmartin-ciandt <dmartin@ciandt.com>
+Date:   Tue Oct 2 18:55:50 2012 -0300
+
+    1.10 - Install and configure CakePHP
+
+[33mcommit cc9794f2523eed5516e1a77fccc2a85799265558[m
+Author: roberto <roberto@ciandt.com>
+Date:   Tue Oct 2 16:08:56 2012 -0300
+
+    add new asset by cristian
+
+[33mcommit 5b39da3a81b652330432ac097c12021840fc0e1d[m
+Author: roberto <roberto@ciandt.com>
+Date:   Tue Oct 2 16:04:09 2012 -0300
+
+    add new asset
+
+[33mcommit 542c785938a58048d523efb417f6c4e5b6b059e7[m
+Author: nicolas <nicolas@ciandt.com>
+Date:   Wed Sep 26 17:55:13 2012 -0300
+
+    Initial assets upload
+
+[33mcommit a3e493ef086f69bc228a57d79bb7eabf40fbffa4[m
+Author: Nicolás Bouhid <nicolas@ciandt.com>
+Date:   Thu Sep 20 12:14:52 2012 -0700
+
+    Initial commit

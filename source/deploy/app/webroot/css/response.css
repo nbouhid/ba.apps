@@ -20,7 +20,7 @@ html[xmlns] .clearfix {
 }
 
 html {
-
+  background-color: #fafafa;
 }
 
 body {
@@ -193,7 +193,7 @@ footer {
     bottom: 0;
     left: 0;
     background: #fff;
-    height: 81px;
+    height: 73px;
     z-index: 1022;
 }
 
@@ -513,12 +513,12 @@ body.page-barrios header h1 {
     margin-top: 6px; 
 }
 
-body.page-barrios header div.container-back {
+header div.container-back {
     width: 25%;
     float: left;
 }
 
-body.page-barrios header div.container-back a {
+header div.container-back a {
     text-decoration: none;
     background: url("../img/bg_buscar.jpg") repeat-x;
     -webkit-border-radius: 0 25px 25px 0;
@@ -534,7 +534,7 @@ body.page-barrios header div.container-back a {
     padding-left: 12px;
 }
 
-body.page-barrios header div.container-back span {
+header div.container-back span {
     display: block;
     background: url("../img/img_buscar_flecha.png") no-repeat left top;
     width: 20px;
@@ -719,6 +719,12 @@ body.page-barrios header div.container-back span {
 
 }
 
+@media (max-width: 639px) {
+    body.home footer {
+       display: none;
+    }
+}
+
 @media (max-width: 480px) {
     
     body.page-cursos #content .container .content-general .details ul.cursos-list li {
@@ -773,7 +779,7 @@ body.page-barrios header div.container-back span {
         padding: 5px 0 5px;
     }
 
-    body.page-barrios header div.container-back {
+    header div.container-back {
         width: 35%;
         padding: 12px 0 0 0;
     }
