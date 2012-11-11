@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
     <title><?php echo $title_for_layout; ?></title>
     <?php
       echo $this->Html->meta('icon');
@@ -25,7 +25,7 @@
         <?php else:?>
         <div class="container-back"><span>&nbsp;</span><a href="javascript:history.back();" title="volver">volver</a></div>
       <?php endif;?>
-      <h1>CURSOS EN LA CIUDAD</h1>
+      <h1><a href="/" title="INICIO - CURSOS EN LA CIUDAD">CURSOS EN LA CIUDAD</a></h1>
     </header>
     <?php if(!empty($top_title)) : ?>
       <div class="bar-top">

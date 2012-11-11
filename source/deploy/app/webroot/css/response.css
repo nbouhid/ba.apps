@@ -29,6 +29,10 @@ body {
     margin: 0;
 }
 
+a, a:focus, a:active {
+    outline:none;
+}
+
 .box-shadow {
     background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
@@ -58,14 +62,17 @@ header h1 {
     line-height: 24px;
     font-weight: bold;
     text-align: center; 
-    width: 80%;
-    text-shadow: 1px 1px 1px #FFF;
+    width: 50%;
     color: #000;
     margin: 0 auto;
 } 
 
 header h1 a {
+    text-shadow: 1px 1px 1px #FFF;
+    text-decoration: none;
     width: 50%;
+    color: #000;
+    
 }
 
 #content {
@@ -192,7 +199,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    background: #fff;
+    background: #fafafa;
     height: 73px;
     z-index: 1022;
 }
@@ -545,6 +552,14 @@ header div.container-back span {
 
 /*---- END OF BARRIOS PAGE ----*/
 
+/*----- DETAILS PAGE -----*/
+
+body.page-details  #content .container .content-general .details p {
+    width: 80%;
+}
+
+/*----- END OF DETAILS PAGE -----*/
+
 /*---- CURSOS SEARCH ACTIVE PAGE ----*/
 
 .search-form {
@@ -599,7 +614,7 @@ header div.container-back span {
     }
 
     body.home footer {
-        position: inherit;
+        display; none;
     }
 
     body.home footer div.footer-text {
@@ -796,6 +811,10 @@ header div.container-back span {
         height: 75px;
         padding-top: 5px;
     }  
+    
+    body.basic-page #content .container .content-general .details p {
+        width: 210px
+    }
     
     body.page-cursos-front #content .container .content-general .details a span.icono-curso {
         background-size: 80%;
