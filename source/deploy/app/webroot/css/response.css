@@ -723,6 +723,14 @@ header div.container-back span {
     body.home footer {
        display: none;
     }
+    
+    header {
+        padding: 15px 0 25px;
+    }
+    
+    header h1 {
+        padding-top: 5px;
+    }
 }
 
 @media (max-width: 480px) {
