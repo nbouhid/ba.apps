@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 	 <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width,height=device-height">
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
     <title><?php echo $title_for_layout; ?></title>
     <?php
       echo $this->Html->meta('icon');
@@ -19,9 +19,13 @@
       echo $this->fetch('script');
     ?>
   </head>
-  <body class="<?php if(isset($body_classes)): echo implode(" ", $body_classes); endif; ?>">
-    <header>        
-      <h1>CURSOS EN LA CIUDAD</h1>
+  <body class="<?php if(isset($body_classes)): echo implode(" ", $body_classes);else: echo 'home'; endif; ?>">
+    <header>
+      <?php if(isset($is_homepage) && $is_homepage === true) : ?>
+        <?php else:?>
+        <div class="container-back"><span>&nbsp;</span><a href="javascript:history.back();" title="volver">volver</a></div>
+      <?php endif;?>
+      <h1><a href="/" title="INICIO - CURSOS EN LA CIUDAD">CURSOS EN LA CIUDAD</a></h1>
     </header>
     <?php if(!empty($top_title)) : ?>
       <div class="bar-top">

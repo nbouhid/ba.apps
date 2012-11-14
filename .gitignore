@@ -30,3 +30,5 @@ xmlrpc.php
 /scripts
 /themes
 
+
+/source/deploy/app/tmp/cache/persistent/myapp_cake_core_file_map

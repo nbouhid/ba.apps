@@ -20,13 +20,17 @@ html[xmlns] .clearfix {
 }
 
 html {
-
+  background-color: #fafafa;
 }
 
 body {
     font: 13px/16px arial;
     color: #fff;
     margin: 0;
+}
+
+a, a:focus, a:active {
+    outline:none;
 }
 
 .box-shadow {
@@ -58,14 +62,17 @@ header h1 {
     line-height: 24px;
     font-weight: bold;
     text-align: center; 
-    width: 80%;
-    text-shadow: 1px 1px 1px #FFF;
+    width: 50%;
     color: #000;
     margin: 0 auto;
 } 
 
 header h1 a {
+    text-shadow: 1px 1px 1px #FFF;
+    text-decoration: none;
     width: 50%;
+    color: #000;
+    
 }
 
 #content {
@@ -192,8 +199,8 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    background: #fff;
-    height: 81px;
+    background: #fafafa;
+    height: 73px;
     z-index: 1022;
 }
 
@@ -513,12 +520,12 @@ body.page-barrios header h1 {
     margin-top: 6px; 
 }
 
-body.page-barrios header div.container-back {
+header div.container-back {
     width: 25%;
     float: left;
 }
 
-body.page-barrios header div.container-back a {
+header div.container-back a {
     text-decoration: none;
     background: url("../img/bg_buscar.jpg") repeat-x;
     -webkit-border-radius: 0 25px 25px 0;
@@ -534,7 +541,7 @@ body.page-barrios header div.container-back a {
     padding-left: 12px;
 }
 
-body.page-barrios header div.container-back span {
+header div.container-back span {
     display: block;
     background: url("../img/img_buscar_flecha.png") no-repeat left top;
     width: 20px;
@@ -544,6 +551,14 @@ body.page-barrios header div.container-back span {
 }
 
 /*---- END OF BARRIOS PAGE ----*/
+
+/*----- DETAILS PAGE -----*/
+
+body.page-details  #content .container .content-general .details p {
+    width: 80%;
+}
+
+/*----- END OF DETAILS PAGE -----*/
 
 /*---- CURSOS SEARCH ACTIVE PAGE ----*/
 
@@ -599,7 +614,7 @@ body.page-barrios header div.container-back span {
     }
 
     body.home footer {
-        position: inherit;
+        display; none;
     }
 
     body.home footer div.footer-text {
@@ -714,11 +729,70 @@ body.page-barrios header div.container-back span {
         float: left; 
     }
 
+    
     /*-------  CURSOS FRONT PAGE  -------*/
 
 }
 
+@media (max-width: 639px) {
+    body.home footer {
+       display: none;
+    }
+    
+    header {
+        padding: 15px 0 25px;
+    }
+    
+    header h1 {
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    body.page-cursos #content .container .content-general .details ul.cursos-list li {
+        height: 100px;
+    }
+    
+    body.basic-page #content .container .content-general .details a {
+        height: 75px;
+        padding-top: 5px;
+    }
+    
+    body.page-cursos #content .container .content-general .details ul.cursos-list li a {
+        height: 100px;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a span.icono-curso {
+        margin:0 2%;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a.fotografia span.icono-curso {
+        margin-top: 10px;
+    }
+    
+    body.basic-page #content .container .content-general .details a span.datos-curso {
+        width: 72%;
+    }
+    
+    body.page-cursos #content .container .content-general .details a span.ic_arrow {
+        margin-right: 3%;
+        margin-top: 42px;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a span.ic_arrow {
+        margin-top: 28px;
+    }
+    
+    body.page-cursos #content .container .content-general .details a span.datos-curso {
+      padding-left: 2%;
+      width: 90%;
+    }
+    
+}
+
 @media (max-width: 320px) {
+
     body.page-barrios header {
         padding: 0;
     }
@@ -728,9 +802,29 @@ body.page-barrios header div.container-back span {
         padding: 5px 0 5px;
     }
 
-    body.page-barrios header div.container-back {
+    header div.container-back {
         width: 35%;
         padding: 12px 0 0 0;
     }
+       
+    body.basic-page #content .container .content-general .details a {
+        height: 75px;
+        padding-top: 5px;
+    }  
+    
+    body.basic-page #content .container .content-general .details p {
+        width: 210px
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a span.icono-curso {
+        background-size: 80%;
+        width: 41px;
+    }   
+    
+    body.page-cursos-front #content .container .content-general .details a.fotografia span.icono-curso {
+        height: 21px;        
+        margin-top: 25px;
+    }
+
 
 }
