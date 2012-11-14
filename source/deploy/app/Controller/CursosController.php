@@ -74,4 +74,31 @@ class CursosController extends AppController {
     $this->set('curso', $curso);
     $this->set('top_title', 'Curso de ' . $curso['Curso']['nombre']);
   }
+  
+  private function validateBusquedaAvanzada() {
+	return !($this->data['Curso']['categoria_id'] == 0 && $this->data['Curso']['barrio_id'] == 0 && $this->data['Curso']['centro_id'] == 0);
+  }
+  
+  public function avanzada() {
+    $this->set('top_title', 'Búsqueda Avanzada');
+	
+	if($this->request->is('post') && $this->validateBusquedaAvanzada()) {
+	  $conditions = array();
+	  
+	  if($this->data['Curso']['barrio_id'] != 0)
+		$conditions[] = array('barrio_id' => $this->data['Curso']['barrio_id']);
+
+	  if($this->data['Curso']['categoria_id'] != 0)
+		$conditions[] = array('categoria_id' => $this->data['Curso']['categoria_id']);
+		
+      $this->set('items', $this->Curso->getCursos($conditions));
+
+      $this->view = 'list';
+	}
+	else {
+	  $this->set('categorias', $this->Categoria->find('list'));
+	  $this->set('barrios', $this->Barrio->find('list'));
+	  $this->set('centros', $this->Centro->find('list'));
+	}
+  }
 }

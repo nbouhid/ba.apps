@@ -21,6 +21,7 @@
         <?php print $curso['Centro']['telefono']; ?>
       </p>
     </div>
+<?php if(isset($curso['Centro']['atencion_desde'])): ?>
     <div class="hour clearfix">
       <span>&nbsp;</span>
       <p>
@@ -28,6 +29,7 @@
         <?php print date('H:i', strtotime($curso['Centro']['atencion_desde'])); ?> a <?php print date('H:i', strtotime($curso['Centro']['atencion_hasta'])); ?>hs.
       </p>
     </div>
+<?php endif; ?>
   </div>
   
   <div id="mapa"></div>

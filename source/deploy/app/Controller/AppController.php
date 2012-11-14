@@ -32,9 +32,14 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-  
+  public $uses = array('Curso');
   protected function listAll($model) {
     $rows = $model->find('all');
+	foreach($rows as &$row) {
+	  $row[$model->name]['cant_cursos'] = $this->Curso->find('count', array(
+		'conditions' => array($model->name . '_id' => $row[$model->name]['id'])
+	  ));
+	}
     $this->set('items', $rows);
        
     $this->viewPath = '';

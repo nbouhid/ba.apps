@@ -122,4 +122,10 @@ class Curso extends AppModel {
       'order' => 'Curso.nombre'
     ));
   }
+  
+  public function getCantCursos($conditions = array()) {   
+    return $this->find('count', array(
+      'conditions' => $conditions
+    ));
+  }
 }

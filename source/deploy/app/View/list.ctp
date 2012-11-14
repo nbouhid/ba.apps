@@ -7,7 +7,7 @@
           <span class="icono-curso">&nbsp;</span>
           <span class="datos-curso">
             <strong><?php echo $item[$model]['nombre']; ?></strong>
-            123 cursos
+            <?php echo $item[$model]['cant_cursos']; ?> cursos
           </span>
           <span class="ic_arrow">&nbsp;</span>
         </a>
