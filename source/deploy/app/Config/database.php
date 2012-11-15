@@ -62,10 +62,10 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
+		'host' => 'floyd.cit',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'bsasapp_dev',
+		'database' => 'bs_apps_ciandt_dev',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
