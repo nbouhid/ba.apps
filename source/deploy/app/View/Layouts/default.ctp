@@ -42,8 +42,8 @@
     </div>    
     <footer>
     <?php if(isset($is_homepage) && $is_homepage === true) : ?>
-    
-      <div>
+      <img src="img/logo-footer-desktop.png" alt="Buenos aires App" class="logo-footer" />
+      <div class="footer-text">
         @Copyright Buenos Aires App 2012
       </div>
     <?php else : ?>

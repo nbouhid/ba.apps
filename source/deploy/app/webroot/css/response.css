@@ -433,10 +433,10 @@ body.page-cursos-front #content .container .content-general .details a span.icon
     width: 59px;
     display: block;
     margin: 0 5% 0 15%;
+    height: 39px;
 }
 
 body.page-cursos-front #content .container .content-general .details a.fotografia span.icono-curso {
-    height: 39px;
     margin-top: 5px;
 }
 
@@ -445,32 +445,33 @@ body.page-cursos-front #content .container .content-general .details a.manualida
     height: 57px;
 }
 
-body.page-cursos-front #content .container .content-general .details a.musica span.icono-curso {
+body.page-cursos-front #content .container .content-general .details a.Musica span.icono-curso {
     background-position: 0 -96px;
     height: 57px;
 }
 
-body.page-cursos-front #content .container .content-general .details a.gastronomia span.icono-curso {
+body.page-cursos-front #content .container .content-general .details a.Gastronomia span.icono-curso {
     background-position: 0 -153px;
     height: 44px;
 }
 
-body.page-cursos-front #content .container .content-general .details a.mecanica span.icono-curso {
+body.page-cursos-front #content .container .content-general .details a.Manualidades span.icono-curso {
     background-position: 0 -197px;
     height: 57px;
 }
 
-body.page-cursos-front #content .container .content-general .details a.informatica span.icono-curso {
+body.page-cursos-front #content .container .content-general .details a.Informatica span.icono-curso {
     background-position: 0 -254px;
     height: 43px;
 }
 
-body.page-cursos-front #content .container .content-general .details a.literatura span.icono-curso {
+body.page-cursos-front #content .container .content-general .details a.Varios span.icono-curso,
+body.page-cursos-front #content .container .content-general .details a.Idioma span.icono-curso {
     background-position: 0 -297px;
     height: 39px;
 }
 
-body.page-cursos-front #content .container .content-general .details a.administracion span.icono-curso {
+body.page-cursos-front #content .container .content-general .details a.Gestion span.icono-curso {
     background-position: 0 -335px;
     height: 58px;
 }
@@ -604,6 +605,60 @@ body.page-details  #content .container .content-general .details p {
 }
 
 /*---- END OF CURSOS SEARCH ACTIVE PAGE ----*/
+
+/*----- BUSQUEDA AVANZADA------*/
+
+form.categoria-busqueda div.barrio img,
+form.categoria-busqueda div.categoria img {
+    float: left;
+    margin-right: 18px; 
+}
+
+form.categoria-busqueda div.barrio,
+form.categoria-busqueda div.categoria {
+    overflow: hidden;
+    clear: both;
+    width: 334px;
+    margin: 0 auto;
+    padding: 10px 10px; 
+}
+
+form.categoria-busqueda div.categoria p,
+form.categoria-busqueda div.barrio p {
+    color: #b3b4b5;
+    font-size: 30px;
+    padding: 24px 0;
+}
+
+form.categoria-busqueda div.categoria select,
+form.categoria-busqueda div.barrio select {
+    height: 30px;
+    font-size: 20px
+}
+
+form.categoria-busqueda input.busqueda {
+    display: block;
+    border: none;
+    background: url("../img/bg_buscar_lupa.jpg") no-repeat;
+    width: 231px;
+    height: 72px;
+    cursor: pointer;
+    margin: 0 auto;
+    padding-right: 40px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+form.categoria-busqueda div.categoria p {
+  display: block;
+}
+
+form.categoria-busqueda div.submit {
+    padding: 20px 0 42px;
+}
+
+/*----- [End Of] BUSQUEDA AVANZADA------*/
 
 @media (min-width: 640px) {
 
@@ -746,6 +801,17 @@ body.page-details  #content .container .content-general .details p {
     header h1 {
         padding-top: 5px;
     }
+    
+    form.categoria-busqueda div.barrio img,
+    form.categoria-busqueda div.categoria img {
+        width: 50px;
+    }
+    
+    form.categoria-busqueda div.categoria p,
+    form.categoria-busqueda div.barrio p {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -824,6 +890,11 @@ body.page-details  #content .container .content-general .details p {
     body.page-cursos-front #content .container .content-general .details a.fotografia span.icono-curso {
         height: 21px;        
         margin-top: 25px;
+    }
+    
+    form.categoria-busqueda div.barrio,
+    form.categoria-busqueda div.categoria {
+        width: auto;
     }
 
 
