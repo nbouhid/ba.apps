@@ -633,7 +633,8 @@ form.categoria-busqueda div.barrio p {
 form.categoria-busqueda div.categoria select,
 form.categoria-busqueda div.barrio select {
     height: 30px;
-    font-size: 20px
+    font-size: 20px;
+    width: 200px;
 }
 
 form.categoria-busqueda input.busqueda {
