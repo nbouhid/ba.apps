@@ -80,7 +80,7 @@ class CursosController extends AppController {
   }
   
   public function avanzada() {
-    $this->set('top_title', 'Búsqueda Avanzada');
+    $this->set('top_title', 'Bï¿½squeda Avanzada');
 	
 	if($this->request->is('post') && $this->validateBusquedaAvanzada()) {
 	  $conditions = array();

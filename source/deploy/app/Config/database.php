@@ -59,7 +59,7 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
+	/*public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'floyd.cit',
@@ -68,8 +68,19 @@ class DATABASE_CONFIG {
 		'database' => 'bs_apps_ciandt_dev',
 		'prefix' => '',
 		//'encoding' => 'utf8',
-	);
+	);*/
 
+        	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'bsasapp_dev',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);
+        
 	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,

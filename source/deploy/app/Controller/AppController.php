@@ -48,5 +48,6 @@ class AppController extends Controller {
     $this->set('body_classes', array('basic-page', 'page-cursos-front'));
     $this->set('model', $model->name);
     $this->set('top_title', $this->name);
+    
   }
 }
