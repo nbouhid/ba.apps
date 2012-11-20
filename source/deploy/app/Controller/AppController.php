@@ -33,6 +33,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
   public $uses = array('Curso');
+  protected $_body_classes = array('basic-page');
   protected function listAll($model) {
     $rows = $model->find('all');
 	foreach($rows as &$row) {
@@ -45,7 +46,8 @@ class AppController extends Controller {
     $this->viewPath = '';
     $this->view = 'list';
     
-    $this->set('body_classes', array('basic-page', 'page-cursos-front'));
+    $this->_body_classes[] = 'page-cursos-front';
+    $this->set('body_classes', $this->_body_classes);
     $this->set('model', $model->name);
     $this->set('top_title', $this->name);
     

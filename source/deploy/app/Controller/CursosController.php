@@ -11,7 +11,7 @@ class CursosController extends AppController {
   public function beforeFilter() {
     parent::beforeFilter();
     
-    $this->set('body_classes', array('basic-page', 'page-cursos'));
+    $this->_body_classes = array('basic-page', 'page-cursos');
     
     //If the action doesn't exist, may be it's a request for a curso
     if(!in_array($this->request->params['action'], get_class_methods($this))
@@ -27,9 +27,13 @@ class CursosController extends AppController {
         
         $this->view = 'detalle';
         
-        $this->set('body_classes', array('basic-page', 'page-details'));
+        $this->_body_classes = array('basic-page', 'page-details');
       }
     }
+  }
+  
+  public function beforeRender() {
+    $this->set('body_classes', $this->_body_classes);
   }
 /**
  * index method
@@ -43,14 +47,17 @@ class CursosController extends AppController {
 	}
   
   public function porBarrio($nombre) {
+    $this->_body_classes[] = 'por-barrio';
     $this->cargarItemModeloPorNombre($this->Barrio, $nombre);
   }
   
   public function porCentro($nombre) {
+    $this->_body_classes[] = 'por-centro';
     $this->cargarItemModeloPorNombre($this->Centro, $nombre);
   }
   
   public function porCategoria($nombre) {
+    $this->_body_classes[] = 'por-categoria';
     $this->cargarItemModeloPorNombre($this->Categoria, $nombre);
   }
   
@@ -76,13 +83,15 @@ class CursosController extends AppController {
   }
   
   private function validateBusquedaAvanzada() {
-	return !($this->data['Curso']['categoria_id'] == 0 && $this->data['Curso']['barrio_id'] == 0 && $this->data['Curso']['centro_id'] == 0);
+	return !($this->data['Curso']['categoria_id'] == 0 && $this->data['Curso']['barrio_id'] == 0);
   }
   
   public function avanzada() {
     $this->set('top_title', 'B&uacute;squeda Avanzada');
 	
     if($this->request->is('post') && $this->validateBusquedaAvanzada()) {
+      $this->_body_classes[] = 'busqueda-avanzada';
+      $this->_body_classes[] = 'resultados';
       $conditions = array();
 
       if($this->data['Curso']['barrio_id'] != 0)
@@ -99,10 +108,12 @@ class CursosController extends AppController {
         $this->view = 'list';
       }
       else {
+        $this->_body_classes[] = 'busqueda-avanzada';
         $this->view = 'no_results';
       }
     }
     else {
+      $this->_body_classes[] = 'busqueda-avanzada';
       $this->set('categorias', $this->Categoria->find('list', array(
         'order' => 'Categoria.nombre'
       )));

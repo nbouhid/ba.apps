@@ -11,6 +11,7 @@ class BarriosController extends AppController {
    * Index action
    */
   public function index() {
+    $this->_body_classes[] = 'listado-barrios';
     $this->listAll($this->Barrio);
   }
 }
