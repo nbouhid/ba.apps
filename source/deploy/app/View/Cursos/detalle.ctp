@@ -21,12 +21,12 @@
         <?php print $curso['Centro']['telefono']; ?>
       </p>
     </div>
-<?php if(isset($curso['Centro']['atencion_desde'])): ?>
+<?php if(isset($curso['Centro']['atencion'])): ?>
     <div class="hour clearfix">
       <span>&nbsp;</span>
       <p>
         <strong>Horarios de Atenci&oacute;n</strong>
-        <?php print date('H:i', strtotime($curso['Centro']['atencion_desde'])); ?> a <?php print date('H:i', strtotime($curso['Centro']['atencion_hasta'])); ?>hs.
+        <?php print $curso['Centro']['atencion']; ?>
       </p>
     </div>
 <?php endif; ?>
@@ -39,5 +39,8 @@
   var direccion_curso = '<?php print $curso['Centro']['direccion']; ?>';
 </script>
 <div id="marker_desc" style="display: none;">
-<?php print $curso['Centro']['nombre']; ?><br><br><p style="color: red;">sarasa</p>
+  <p>
+    <b><?php print $curso['Centro']['nombre']; ?></b><br>
+    <?php print $curso['Centro']['direccion']; ?>
+  </p>
 </div>

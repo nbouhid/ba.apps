@@ -70,13 +70,13 @@ class DATABASE_CONFIG {
 		//'encoding' => 'utf8',
 	);*/
 
-        	public $default = array(
+  public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
+		'host' => 'floyd.cit',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'bsasapp_dev',
+		'database' => 'bs_apps_ciandt_dev',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

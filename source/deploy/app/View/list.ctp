@@ -3,7 +3,7 @@
     <ul class="cursos-list">
       <?php foreach($items as $item) : ?>
       <li>
-        <a class="<?php $name_string = explode(" ", $item[$model]['nombre']); echo $name_string[0]; ?> clearfix" href="/cursos/por<?php print strtolower($model) ?>/<?php print Inflector::slug($item[$model]['nombre']) ?>">
+        <a class="<?php $name_string = explode(" ", $item[$model]['nombre']); echo $name_string[0]; ?> clearfix" href="/cursos/por<?php print strtolower($model) ?>/<?php print strtolower(Inflector::slug($item[$model]['nombre'])); ?>">
           <span class="icono-curso">&nbsp;</span>
           <span class="datos-curso">
             <strong><?php echo $item[$model]['nombre']; ?></strong>
