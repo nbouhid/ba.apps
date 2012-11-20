@@ -54,7 +54,7 @@ img {
 
 header {
     width: 100%;
-    padding: 20px 0;
+    height: 64px;
 }
 
 header h1 {
@@ -65,14 +65,20 @@ header h1 {
     width: 50%;
     color: #000;
     margin: 0 auto;
+    padding-top: 20px;
 } 
 
 header h1 a {
     text-shadow: 1px 1px 1px #FFF;
     text-decoration: none;
     width: 50%;
-    color: #000;
-    
+    color: #000; 
+}
+
+header h1 span {
+    font-size: 10px;
+    color: red;
+    paddin-top:5px;
 }
 
 #content {
@@ -109,7 +115,6 @@ header h1 a {
     background: -ms-linear-gradient(top, #bebebe 0%,#f2f2f2 4%); /* IE10+ */
     background: linear-gradient(to bottom, #bebebe 0%,#f2f2f2 4%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
-
 }
 
 #content .container nav ul.menu li a span {
@@ -126,11 +131,11 @@ header h1 a {
 }
 
 #content .container nav ul.menu li.centros a span {
-    background-position: 0 -52px;
+    background-position: 0 -105px;
 }
 
 #content .container nav ul.menu li.barrios a span {
-    background-position: 0 -105px;
+    background-position: 0 -52px;
 }
 
 #content .container nav ul.menu li.busqueda a span {
@@ -469,6 +474,7 @@ body.page-cursos-front #content .container .content-general .details a.Varios sp
 body.page-cursos-front #content .container .content-general .details a.Idioma span.icono-curso {
     background-position: 0 -297px;
     height: 39px;
+    margin-top: 7px;
 }
 
 body.page-cursos-front #content .container .content-general .details a.Gestion span.icono-curso {
@@ -524,6 +530,7 @@ body.page-barrios header h1 {
 header div.container-back {
     width: 25%;
     float: left;
+    margin-top: 13px;
 }
 
 header div.container-back a {
@@ -791,16 +798,48 @@ form.categoria-busqueda div.submit {
 }
 
 @media (max-width: 639px) {
-    body.home footer {
-       display: none;
-    }
     
     header {
-        padding: 15px 0 25px;
-    }
+        padding: 6px 0 0;
+    }       
     
     header h1 {
-        padding-top: 5px;
+        padding: 6px 0 0 0;
+    }    
+    
+    body.basic-page header h1 {
+        width: 85%;
+        padding-top: 15px;
+    }
+    
+    body.basic-page header h1 a {
+        width: 100%;
+    }
+
+    body.page-barrios header {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    header div.container-back {
+        width: 20%;
+        padding: 0;
+        margin-left: 4%;
+    }
+    
+    header div.container-back span {
+        display: none;
+    }
+    
+    header div.container-back a {
+        background: url("../img/img_buscar_flecha_mobile.png") no-repeat left top;
+        width: 56px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 0;
+        line-height: 0;
+       
     }
     
     form.categoria-busqueda div.barrio img,
@@ -813,6 +852,11 @@ form.categoria-busqueda div.submit {
         padding-top: 0;
         padding-bottom: 10px;
     }
+    
+    body.home footer {
+       display: none;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -831,7 +875,7 @@ form.categoria-busqueda div.submit {
     }
     
     body.page-cursos-front #content .container .content-general .details a span.icono-curso {
-        margin:0 2%;
+        margin: 6px 2% 0;
     }
     
     body.page-cursos-front #content .container .content-general .details a.fotografia span.icono-curso {
@@ -856,24 +900,16 @@ form.categoria-busqueda div.submit {
       width: 90%;
     }
     
+    
 }
 
 @media (max-width: 320px) {
-
-    body.page-barrios header {
-        padding: 0;
+    
+    body.basic-page header h1 {
+        width: 85%;
+        padding-top: 6px;
     }
-
-    body.page-barrios header h1 {
-        width: 55%;
-        padding: 5px 0 5px;
-    }
-
-    header div.container-back {
-        width: 35%;
-        padding: 12px 0 0 0;
-    }
-       
+    
     body.basic-page #content .container .content-general .details a {
         height: 75px;
         padding-top: 5px;
@@ -885,12 +921,50 @@ form.categoria-busqueda div.submit {
     
     body.page-cursos-front #content .container .content-general .details a span.icono-curso {
         background-size: 80%;
-        width: 41px;
+        width: 42px;
+        height: 22px;
+        margin-top: 20px;
     }   
     
     body.page-cursos-front #content .container .content-general .details a.fotografia span.icono-curso {
         height: 21px;        
         margin-top: 25px;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a.Gastronomia span.icono-curso {
+        height: 23px;
+        background-position: 0 -87px;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a.Gestion span.icono-curso {
+        background-position: 0 -187px;
+        height: 34px;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a.Idioma span.icono-curso {
+        background-position: 0 -165px;
+        height: 22px;
+        margin-top: 15px;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a.Manualidades span.icono-curso {
+        background-position: 0 -110px;
+        height: 32px;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a.Musica span.icono-curso {
+        background-position: 0 -54px;
+        height: 32px;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a.Informatica span.icono-curso {
+        background-position: 0 -141px;
+        height: 25px;
+    }
+    
+    body.page-cursos-front #content .container .content-general .details a span.ic_arrow {
+       
+        margin-right: 5px;
     }
     
     form.categoria-busqueda div.barrio,

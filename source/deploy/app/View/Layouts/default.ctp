@@ -25,7 +25,7 @@
         <?php else:?>
         <div class="container-back"><span>&nbsp;</span><a href="javascript:history.back();" title="volver">volver</a></div>
       <?php endif;?>
-      <h1><a href="/" title="INICIO - CURSOS EN LA CIUDAD">CURSOS EN LA CIUDAD</a></h1>
+      <h1><a href="/" title="INICIO - CURSOS EN LA CIUDAD">CURSOS EN LA CIUDAD<span class="beta">Beta</span></a></h1>
     </header>
     <?php if(!empty($top_title)) : ?>
       <div class="bar-top">
