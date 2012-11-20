@@ -91,9 +91,16 @@ class CursosController extends AppController {
       if($this->data['Curso']['categoria_id'] != 0)
         $conditions[] = array('categoria_id' => $this->data['Curso']['categoria_id']);
 
-      $this->set('items', $this->Curso->getCursos($conditions));
+      $items = $this->Curso->getCursos($conditions);
+      
+      if (count($items)>0) {
+        $this->set('items', $this->Curso->getCursos($conditions));
 
-      $this->view = 'list';
+        $this->view = 'list';
+      }
+      else {
+        $this->view = 'no_results';
+      }
     }
     else {
       $this->set('categorias', $this->Categoria->find('list', array(
