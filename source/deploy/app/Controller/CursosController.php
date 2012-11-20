@@ -80,25 +80,28 @@ class CursosController extends AppController {
   }
   
   public function avanzada() {
-    $this->set('top_title', 'Búsqueda Avanzada');
+    $this->set('top_title', 'B&uacute;squeda Avanzada');
 	
-	if($this->request->is('post') && $this->validateBusquedaAvanzada()) {
-	  $conditions = array();
-	  
-	  if($this->data['Curso']['barrio_id'] != 0)
-		$conditions[] = array('barrio_id' => $this->data['Curso']['barrio_id']);
+    if($this->request->is('post') && $this->validateBusquedaAvanzada()) {
+      $conditions = array();
 
-	  if($this->data['Curso']['categoria_id'] != 0)
-		$conditions[] = array('categoria_id' => $this->data['Curso']['categoria_id']);
-		
+      if($this->data['Curso']['barrio_id'] != 0)
+        $conditions[] = array('barrio_id' => $this->data['Curso']['barrio_id']);
+
+      if($this->data['Curso']['categoria_id'] != 0)
+        $conditions[] = array('categoria_id' => $this->data['Curso']['categoria_id']);
+
       $this->set('items', $this->Curso->getCursos($conditions));
 
       $this->view = 'list';
-	}
-	else {
-	  $this->set('categorias', $this->Categoria->find('list'));
-	  $this->set('barrios', $this->Barrio->find('list'));
-	  $this->set('centros', $this->Centro->find('list'));
-	}
+    }
+    else {
+      $this->set('categorias', $this->Categoria->find('list', array(
+        'order' => 'Categoria.nombre'
+      )));
+      $this->set('barrios', $this->Barrio->find('list', array(
+        'order' => 'Barrio.nombre'
+      )));
+    }
   }
 }

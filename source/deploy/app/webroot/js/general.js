@@ -19,8 +19,6 @@
               offsetX: 5,
               offsetY: 5
             }
-            //http://servicios.usig.buenosaires.gov.ar/symbols/mapabsas/bibliotecas_patrimoniales.png
-            //http://servicios.usig.buenosaires.gov.ar/symbols/tablero_de_control/sg_bibliotecas.gif
           );
         }
       });

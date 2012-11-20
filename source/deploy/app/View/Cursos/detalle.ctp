@@ -39,5 +39,5 @@
   var direccion_curso = '<?php print $curso['Centro']['direccion']; ?>';
 </script>
 <div id="marker_desc" style="display: none;">
-  sarasa<br><br><p style="color: red;">sarasa</p>
+<?php print $curso['Centro']['nombre']; ?><br><br><p style="color: red;">sarasa</p>
 </div>
