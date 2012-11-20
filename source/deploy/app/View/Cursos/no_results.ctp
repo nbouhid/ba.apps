@@ -1,1 +1,1 @@
-<p style="color: #000; margin: 30px auto; width: 520px;">No se han encontrado resultados. Vuelva a intentarlo con otros par&aacute;metros de b&uacute;squeda.</p>
+<p style="color: #000; margin: 30px auto; max-width: 520px;">No se han encontrado resultados. Vuelva a intentarlo con otros par&aacute;metros de b&uacute;squeda.</p>
