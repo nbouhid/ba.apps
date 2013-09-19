@@ -1,4 +1,4 @@
-ba.apps.ciandt
+ba.apps
 ==============
 
-Ci&amp;T BA apps 
+BA apps 
